@@ -8,8 +8,8 @@
       }
    },
    "spec":{
+      "createExternalLoadBalancer": true,
       "ports": [
-         "createExternalLoadBalancer": true,
          {
            "port": 5000,
            "targetPort": "http-server",
