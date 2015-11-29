@@ -5,20 +5,20 @@ cat > cities-controller.json <<EOF
   "kind": "ReplicationController",
   "apiVersion": "v1",
   "metadata": {
-    "name": "cities",
+    "name": "datascience",
     "labels": {
-      "name": "cities"
+      "name": "datascience"
     }
   },
   "spec": {
     "replicas": 3,
     "selector": {
-      "name": "cities"
+      "name": "datascience"
     },
     "template": {
       "metadata": {
         "labels": {
-          "name": "cities",
+          "name": "datascience",
           "deployment": "${WERCKER_GIT_COMMIT}"
         }
       },
@@ -27,7 +27,7 @@ cat > cities-controller.json <<EOF
           {
             "imagePullPolicy": "Always",
             "image": "quay.io/boersmamarcel/werckertest:${WERCKER_GIT_COMMIT}",
-            "name": "cities",
+            "name": "datascience",
             "ports": [
               {
                 "name": "http-server",
