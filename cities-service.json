@@ -19,5 +19,6 @@
       "selector":{
          "name":"datascience"
       }
-   }
+   },
+   "type" : "LoadBalancer"
 }
