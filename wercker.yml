@@ -58,5 +58,5 @@ deploy:
         username: $KUBERNETES_USERNAME
         password: $KUBERNETES_PASSWORD
         insecure-skip-tls-verify: true
-        command: rolling-update cities
+        command: rolling-update datascience
         image: quay.io/boersmamarcel/werckertest:$WERCKER_GIT_COMMIT
