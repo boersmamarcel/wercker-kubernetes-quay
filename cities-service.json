@@ -2,9 +2,9 @@
    "kind": "Service",
    "apiVersion": "v1",
    "metadata": {
-      "name": "cities",
+      "name": "datascience",
       "labels": {
-         "name": "cities"
+         "name": "datascience"
       }
    },
    "spec":{
@@ -17,7 +17,7 @@
          }
       ],
       "selector":{
-         "name":"cities"
+         "name":"datascience"
       }
    }
 }
